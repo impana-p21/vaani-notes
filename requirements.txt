@@ -1,0 +1,9 @@
+flask>=3.0
+numpy>=1.26
+tokenizers>=0.19
+huggingface_hub>=0.23
+faster-whisper>=1.0
+# Snapdragon NPU (Windows on Arm) build of ONNX Runtime with the QNN Execution Provider:
+onnxruntime-qnn; platform_machine == "ARM64" or platform_machine == "aarch64"
+# Everywhere else (dev laptops / CI) - CPU only:
+onnxruntime>=1.18; platform_machine != "ARM64" and platform_machine != "aarch64"

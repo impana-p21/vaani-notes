@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.db
+models/*.onnx
+models/tokenizer.json
+results.json
